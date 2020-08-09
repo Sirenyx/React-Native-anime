@@ -9,6 +9,14 @@ const styles = StyleSheet.create({
         flexDirection: "column",
     },
 
+    firstSection: {
+        width:300,
+
+    },
+
+    animeSection: {
+        width:"100%",
+    },
 
 	});
 

@@ -1,5 +1,5 @@
 import defaultImage from '@assets/image/khmanga.jpg';
-
+//ACA ESTAN TODOS LOS MANGAS //
 export const bookData = [
     {
         id: 1,
