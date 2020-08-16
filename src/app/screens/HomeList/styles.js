@@ -1,4 +1,5 @@
 import { StyleSheet, BackHandler } from 'react-native';
+import { white, black } from '@constants/colors';
 
 const styles = StyleSheet.create({
     container: {
@@ -7,25 +8,21 @@ const styles = StyleSheet.create({
         backgroundColor:'#9245ff',
         alignItems: 'center',
     },
+    darkContainer: {
+        backgroundColor: black
+    },
+    contentContainer: {
+        backgroundColor: white,
+        flex: 1,
+        alignItems: 'center'
+    },
     separator: {
         height: 2,
         margin: 10,
         backgroundColor: '#000'
     },
-    button: {
-        backgroundColor: '#fc42f6',
-        width:"85%",
-        height:50,
-        marginVertical:20,
-        justifyContent:"center",
-        borderRadius:10,
-        borderWidth:1,
-        borderColor: '#04025c',
-    },
-
-    buttonTitle: {
-        textAlign:"center",
-        fontWeight:"bold",
+    separatorWhite: {
+        backgroundColor: white
     }
 
 });
