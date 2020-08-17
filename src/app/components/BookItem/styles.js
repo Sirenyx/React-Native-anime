@@ -1,28 +1,30 @@
 import { StyleSheet } from 'react-native';
+import { darkViolet, lightYellow, pink, black, creme } from '@constants/colors';
+
 
 const styles = StyleSheet.create({
     bookContainer: {
         flexDirection: "row",
-        backgroundColor: "#ff82ea",
+        backgroundColor: pink,
         width: 400,
         borderRadius: 10,
     },
     bookContainerClicked: {
         flexDirection: "row",
-        backgroundColor: "#f8ffad",
+        backgroundColor: lightYellow,
         width: 400,
         borderRadius: 10,
     },
     title: {
         fontSize: 18,
         marginTop: 10,
-        color: "#000",
+        color: black,
         fontWeight: 'bold',
     },
     titleClicked: {
         fontSize: 18,
         marginTop: 10,
-        color: "#1f0059",
+        color: darkViolet,
         fontWeight: 'bold',
     },
     subtitle: {
@@ -35,11 +37,11 @@ const styles = StyleSheet.create({
         height: 120,
     },
     desc: {
-        color: '#000',
+        color: black,
     },
 
     descClicked: {
-        color: '#fdffe0',
+        color: creme,
 
     },
     imgBook: {

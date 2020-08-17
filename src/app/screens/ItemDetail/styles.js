@@ -1,5 +1,5 @@
-import { StyleSheet, BackHandler } from 'react-native';
-import { white, black } from '@constants/colors';
+import { StyleSheet } from 'react-native';
+import { white, black, pink } from '@constants/colors';
 
 const styles = StyleSheet.create({
     container: {
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
         zIndex: 3,
         width: '100%',
         height: '50%',
-        backgroundColor: black,
+        backgroundColor: pink,
         borderBottomEndRadius: 20,
         borderBottomStartRadius: 20,
         justifyContent: 'center',
@@ -31,10 +31,10 @@ const styles = StyleSheet.create({
         borderBottomEndRadius: 20,
         width: '100%',
         height: '10%',
-        backgroundColor: `${black}75`
+        backgroundColor: `${pink}75`
     },
     authorContainerDark: {
-        backgroundColor: `${white}85`
+        backgroundColor: `${pink}85`
     },
     title: {
         marginTop: 10,
@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
     description: {
         marginTop: 10,
         marginHorizontal: 10,
+        color: black,
         fontSize: 14
     },
     descriptionDark: {

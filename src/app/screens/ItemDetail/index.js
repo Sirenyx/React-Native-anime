@@ -18,9 +18,6 @@ function ItemDetail ({route}) {
             <ScrollView style={styles.descriptionContainer}>
                 <Text style={[styles.description, isLightTheme && styles.descriptionDark]}>{description}</Text>
             </ScrollView>
-            <Text>
-                Workshop React Native
-            </Text>
         </SafeAreaView>
     )
 }

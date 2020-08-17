@@ -1,29 +1,30 @@
 import { StyleSheet, BackHandler } from 'react-native';
-import { white, black } from '@constants/colors';
+import { white, black, violet } from '@constants/colors';
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1, 
-        alignContent:'center',
-        backgroundColor:'#9245ff',
+        flex: 1,
+        backgroundColor: violet,
+        justifyContent: 'center',
         alignItems: 'center',
+        paddingVertical: 10,
     },
     darkContainer: {
-        backgroundColor: black
+        backgroundColor: violet,
     },
     contentContainer: {
         backgroundColor: white,
-        flex: 1,
-        alignItems: 'center'
+        flexGrow: 1,
+        alignItems: 'center',
     },
     separator: {
         height: 2,
         margin: 10,
-        backgroundColor: '#000'
+        backgroundColor: black,
     },
     separatorWhite: {
-        backgroundColor: white
-    }
+        backgroundColor: white,
+    },
 
 });
 

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { FlatList, View, SafeAreaView, Text, TouchableOpacity } from 'react-native';
+import { FlatList, View, SafeAreaView, TouchableOpacity } from 'react-native';
 import { bookData } from '@constants/constants';
 import BookItem from '@components/BookItem';
 import styles from './styles';
@@ -12,8 +12,6 @@ function HomeList(){
     const keyExtractor = ({id}) => `Libro: ${id}`;
 
     const itemSeparator = () => <View style={[styles.separator, isLightTheme && styles.separatorWhite]}/>;
-    
-    const handleNavigateToDetail = () => navigation.navigate("ItemDetail");
 
     const renderItem = ({item}) => {
         const {title, author, description, image} = item;
@@ -38,7 +36,6 @@ function HomeList(){
                 ItemSeparatorComponent={itemSeparator}
                 contentContainerStyle={[styles.contentContainer, isLightTheme && styles.darkContainer]}
             />
-            <View style={styles.separator} />
         </SafeAreaView>
     );
 }
